@@ -1,0 +1,7 @@
+{
+  "name": "gag-ionic-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
