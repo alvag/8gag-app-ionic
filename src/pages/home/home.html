@@ -8,12 +8,12 @@
 
 <ion-content>
 
-    <ion-card>
-        <img src="http://www.puretravel.com/uploadedresources/continents/subcontinents/countries/snowy%20mountain%20lake%20Peru_20090304141539.jpg" alt="">
+    <ion-card *ngFor="let post of posts | async">
+        <img [src]="post.img" alt="">
 
         <ion-card-content>
             <ion-card-title>
-                Post 1
+                {{post.title}}
             </ion-card-title>
         </ion-card-content>
 
