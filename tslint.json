@@ -4,15 +4,11 @@
     ],
     "rules": {
         "no-duplicate-variable": true,
-        "no-unused-variable": [
-            true
-        ],
+        "no-unused-variable": true,
         "semicolon": [
             true,
             "always"
         ],
-        "no-console": [
-            true
-        ]
+        "no-console": true
     }
 }

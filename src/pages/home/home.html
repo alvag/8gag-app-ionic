@@ -8,8 +8,27 @@
 
 <ion-content>
 
+    <ion-card>
+        <img src="http://www.puretravel.com/uploadedresources/continents/subcontinents/countries/snowy%20mountain%20lake%20Peru_20090304141539.jpg" alt="">
+
+        <ion-card-content>
+            <ion-card-title>
+                Post 1
+            </ion-card-title>
+        </ion-card-content>
+
+        <ion-row>
+            <ion-col text-right>
+                <button ion-button clear small icon-left color="primary">
+                    <ion-icon name="share-alt"></ion-icon>
+                    Compartir
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+
     <ion-fab bottom right>
-        <button color="danger" ion-fab>
+        <button color="danger" ion-fab (click)="showModal()">
             <ion-icon name="add"></ion-icon>
         </button>
     </ion-fab>

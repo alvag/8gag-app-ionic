@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
+import { UploadPage } from "../upload/upload";
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+    selector: 'page-home',
+    templateUrl: 'home.html'
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+    constructor(private modalCtrl: ModalController) {
+    }
 
-  }
+    showModal() {
+        let modal = this.modalCtrl.create(UploadPage);
+        modal.present();
+    }
 
 }
